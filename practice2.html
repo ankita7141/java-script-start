@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wish {
+            background-color: rgb(105, 255, 190);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .bag {
+            background-color: rgb(255, 165, 0);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+        
+        .buy {
+            background-color: rgb(0, 128, 255);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button class="bag" onclick="cart_value+=1;
+    document.querySelector('#cart').innerText = `cart value is ${ cart_value}`;  ">add to bag</button>
+    <button class="wish" onclick="cart_value-=1;
+    document.querySelector('#cart').innerText = `cart value is ${ cart_value}`;  ">move to wishlist</button>
+    <button class="buy" onclick="cart_value+=2;
+    document.querySelector('#cart').innerText = `cart value is ${ cart_value}`;  ">add 1+1 sell item</button>
+    <h3 id="cart"></h3>
+    <script>
+        let cart_value = 0;
+        document.querySelector('#cart').innerText = `cart value is ${ cart_value}`;
+        // const is a constant variable that cannot be reassigned
+        // let is a variable that can be reassigned or changed
+        // var is a variable that can be reassigned or changed, but has function scope      
+        const pi = 3.142;
+        let radius = 5;
+        let area = pi * radius * radius;
+        console.log(area);
+    </script>
+
+</body>
+
+</html>
