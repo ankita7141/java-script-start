@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cricket game
+
+    </title>
+    <style>
+        body {
+            text-align: center;
+            margin-top: 70px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>bat ball stump game </h1>
+    <button onclick="
+
+    generatecomputerchoice();
+let resultmsg;
+    if(computerChoice==='ball'){
+        
+resultmsg='user won!';
+    }
+    else if(computerChoice==='bat'){
+      resultmsg= `it 's a tie`; }
+        else if(computerChoice==='stump'){
+           resultmsg='computer won!';
+        }
+        alert(`you have choosen  a bat!. computer Choice is ${computerChoice} and ${resultmsg} `
+    );
+        
+        
+        ">bat</button>
+
+    <button onclick="
+    
+  generatecomputerchoice();
+    
+    if(computerChoice==='ball'){
+        
+ resultmsg= `it 's a tie`;
+    }
+    else if(computerChoice==='bat'){
+         resultmsg='computer won!';
+      }
+        else if(computerChoice==='stump'){
+resultmsg='user won!';
+          
+        }
+        alert(`you have choosen  a ball. computer Choice is ${computerChoice} and ${resultmsg} `
+    );
+        
+        
+        ">ball</button>
+    <button onclick="
+    
+   generatecomputerchoice();
+    
+    if(computerChoice==='ball'){
+        
+ resultmsg= `computer is won!`;
+    }
+    else if(computerChoice==='bat'){
+         resultmsg='user won!';
+      }
+        else if(computerChoice==='stump'){
+resultmsg='it`s a tie!';
+          
+        }
+        alert(`you have choosen  a stump. computer Choice is ${computerChoice} and ${resultmsg} `
+    );
+        
+        
+        ">stump</button>
+    <script>
+        let computerChoice;
+
+        function generatecomputerchoice() {
+            let randomnum = Math.random() * 3;
+
+
+            if (randomnum > 0 && randomnum <= 1) {
+                computerChoice = 'bat';
+
+
+            } else if (randomnum > 1 && randomnum <= 2) {
+
+                computerChoice = 'ball';
+
+            } else {
+                computerChoice = 'stump';
+
+
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>
+
+</html>

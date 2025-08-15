@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function drivestatus() {
+            let age = 21;
+            if (age === undefined) {
+                return 'invalid age! please enter valid age';
+            }
+            // return stops the function immediately
+            if (age > 18) {
+                return 'you can drive';
+
+            } else {
+                return 'use bicycle';
+            }
+
+        }
+        console.log(drivestatus());
+    </script>
+
+</body>
+
+</html>

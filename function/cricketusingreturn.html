@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cricket game
+
+    </title>
+    <style>
+        body {
+            text-align: center;
+            margin-top: 70px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>bat ball stump game </h1>
+    <button onclick="
+
+  let computerChoice= generatecomputerchoice();
+  let result=getresult();
+
+     alert(`you have choosen  a bat!. computer Choice is ${computerChoice} and ${result} `); ">bat</button>
+
+    <button onclick="
+    
+   computerChoice= generatecomputerchoice();
+   result=getresult();
+  alert(`you have choosen  a ball. computer Choice is ${computerChoice} and ${result} ` );  ">ball</button>
+    <button onclick="
+    computerChoice= generatecomputerchoice();
+    result=getresult();
+        alert(`you have choosen  a stump. computer Choice is ${computerChoice} and ${result} `);
+          ">stump</button>
+    <script>
+        function generatecomputerchoice() {
+            let randomnum = Math.random() * 3;
+
+            let Choice;
+            if (randomnum > 0 && randomnum <= 1) {
+                return 'bat';
+
+
+            } else if (randomnum > 1 && randomnum <= 2) {
+
+                return 'ball';
+
+            } else {
+                return 'stump';
+
+
+            }
+
+        }
+
+        function getresult(usermove, computermove) {
+            if (usermove === 'bat') {
+
+
+                if (computerChoice === 'ball') {
+
+                    return 'user won!';
+                } else if (computerChoice === 'bat') {
+                    return `it 's a tie`;
+                } else if (computerChoice === 'stump') {
+                    return 'computer won!';
+                }
+
+            } else if (usermove === 'ball') {
+
+                if (computerChoice === 'ball') {
+
+                    return `it 's a tie`;
+                } else if (computerChoice === 'bat') {
+                    return 'computer won!';
+                } else if (computerChoice === 'stump') {
+                    return 'user won!';
+
+                }
+
+            } else {
+                if (computerChoice === 'ball') {
+
+                    return `computer is won!`;
+                } else if (computerChoice === 'bat') {
+                    return 'user won!';
+                } else if (computerChoice === 'stump') {
+                    return 'it`s a tie!';
+
+                }
+
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>
+
+</html>
