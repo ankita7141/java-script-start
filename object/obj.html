@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let product = {
+            company: 'TATA',
+            price: 98985,
+            item_name: 'shirt',
+            'item-type': 'silk',
+
+        };
+        console.log(product);
+        console.log(product.company);
+        product.company = 'goggle';
+        console.log(product.company);
+        console.log(product['item-type']);
+        delete product.price;
+        console.log(product)
+    </script>
+
+</body>
+
+</html>
