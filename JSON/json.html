@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let product = {
+            name: 'shirt',
+            price: 799,
+            rating: {
+                stars: 5.9,
+                reviews: 599,
+            },
+        };
+        console.log(typeof product);
+        console.log(product);
+        let str = JSON.stringify(product); //convert product object in string
+        console.log(typeof str);
+        console.log(str);
+        let newproduct = JSON.parse(str);
+        console.log(typeof newproduct);
+        //strings are easy to transport over network 
+        //jsonrequires double quotesand it is data foemat,js object is data structure
+    </script>
+</body>
+
+</html>

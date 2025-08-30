@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let product = {
+            name: "cotton",
+            size: 36,
+            type: "silk",
+            ' delivery-time': "same day delivery",
+        };
+        let copyproduct = product; //copy of reference
+        console.log(product);
+        copyproduct.size = 42;
+        console.log(product);
+        copyproduct.type = "maroon";
+        console.log(product);
+        console.log(product[
+            'delivery-time']); //use of bracket notation to display delivery-time
+    </script>
+
+</body>
+
+</html>

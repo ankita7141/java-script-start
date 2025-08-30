@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // automatic conversion of peimitives to objects called autoboxing  
+        console.log('this is an autoboxing method example '.toUpperCase());
+        console.log('this is an autoboxing method example '.replace('autoboxing', 'js'));
+        let a = 5;
+        let b = a;
+        console.log(`value of a is ${a}, b is ${b}`);
+        a = 7;
+        console.log(`value of a is ${a}, b is ${b}`);
+        let x = {
+            num: 5
+        };
+        y = x;
+        console.log(`x=${x.num},y=${y.num}`);
+        x.num = 9;
+        console.log(`x=${x.num},y=${y.num}`); //object works on reference,in this you are comparing references not a content
+        let p = {
+            pop: 'abcd'
+        };
+        let q = {
+            pop: 'abcd'
+        };
+        console.log(p == q);
+        console.log(p === q); //in object comparision it compares only refernce
+    </script>
+</body>
+
+</html>

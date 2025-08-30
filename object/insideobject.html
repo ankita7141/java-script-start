@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let product = {
+            company: 'TATA',
+            price: 899,
+            item_name: ' t - shirt',
+            display_price: function() {
+                // console.log(`price of shirt is ${product.price}`);
+                console.log(`price of shirt is ${this.price}`);
+            },
+        };
+        product.display_price();
+        //console.log() in this console is an object where log is defined
+        //Math.random() in this Math is an object in which random is defined
+    </script>
+
+
+</body>
+
+</html>

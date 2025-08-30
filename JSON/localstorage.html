@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- 
+    1.persistent data storage in browser
+    2.set:stores data as key value pairs
+    3.only string can be stored
+    4.get:retrieves data based on key
+    5.other method:localstrorage.clear(),removeltem()
+    6.do not stores sensitive info.viewable in storage console. -->
+
+
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let product = {
+            name: 'shirt',
+            price: 799,
+            rating: {
+                stars: 5.9,
+                reviews: 599,
+            },
+        };
+        // localStorage.setItem('name', 'SGI hunter');
+        localStorage.setItem('member', '6');
+        localStorage.setItem('price', 899);
+        console.log(localStorage.getItem('name'));
+        localStorage.setItem('product', JSON.stringify(product));
+        console.log(localStorage.getItem('product'));
+        let product2 = JSON.parse(localStorage.getItem('product'));
+        console.log(product2); //converted string into object
+        localStorage.removeItem('price');
+        // localStorage.clear();  it clears all key and values
+    </script>
+</body>
+
+</html>

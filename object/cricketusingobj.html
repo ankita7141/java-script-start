@@ -25,6 +25,15 @@
             win: 0,
             lost: 0,
             tie: 0,
+            display: function() {
+                return `number of matches Won - ${
+                    score.win
+                }, Lost - ${
+                    score.lost
+                }, Tie - ${
+                    score.tie
+                }`
+            }
         };
 
         function generatecomputerchoice() {
@@ -80,11 +89,20 @@
             let computerChoice = generatecomputerchoice();
             let result = getresult(usermove, computerChoice);
 
-            console.log(score);
-            alert(`You chose ${usermove}. Computer chose ${computerChoice}. ${result}
-Score: Won - ${score.win}, Lost - ${score.lost}, Tie - ${score.tie}`);
+
+            alert(`
+                        You chose ${
+                            usermove
+                        }.Computer chose ${
+                            computerChoice
+                        }.${
+                            result
+                        }
+                        Score:${score.display()}
+                        `);
         }
     </script>
+
 
 </body>
 
