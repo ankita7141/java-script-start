@@ -20,18 +20,18 @@
     <button onclick="
 
   let computerChoice= generatecomputerchoice();
-  let result=getresult();
+  let result=getresult('bat',computerChoice);
 
      alert(`you have choosen  a bat!. computer Choice is ${computerChoice} and ${result} `); ">bat</button>
 
     <button onclick="
     
    computerChoice= generatecomputerchoice();
-   result=getresult();
+   result=getresult('ball',computerChoice);
   alert(`you have choosen  a ball. computer Choice is ${computerChoice} and ${result} ` );  ">ball</button>
     <button onclick="
     computerChoice= generatecomputerchoice();
-    result=getresult();
+    result=getresult('stump',computerChoice);
         alert(`you have choosen  a stump. computer Choice is ${computerChoice} and ${result} `);
           ">stump</button>
     <script>
@@ -55,7 +55,7 @@
 
         }
 
-        function getresult(usermove, computermove) {
+        function getresult(usermove, computerChoice) {
             if (usermove === 'bat') {
 
 
