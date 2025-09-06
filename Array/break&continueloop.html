@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let num = [3, 25, 7, 2, 54, 74, 6, ];
+        for (let i = 0; i < num.length; i++) {
+            if (num[i] === 74) {
+                console.log(`num found at index ${i}`)
+                break;
+            }
+            console.log('still loking for num')
+        }
+    </script>
+    <script>
+        for (let i = 1; i <= 25; i++) {
+            if (i % 2 === 0) {
+                continue; //skip one iteration or current iteration
+            }
+            console.log(i)
+
+        }
+    </script>
+
+</body>
+
+</html>

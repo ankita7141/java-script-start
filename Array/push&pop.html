@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let arr = [1, 2, 3, 8, 0, 9];
+        console.log(arr);
+        arr.push(6);
+        console.log(arr)
+        arr.pop();
+        console.log(arr);
+        arr.shift()
+        console.log(arr);
+        arr.unshift(6);
+        console.log(arr);
+        arr.splice(1, 3); //splice delete element from index 1 to 3
+        console.log(arr);
+
+        console.log(arr.toString());
+        arr.sort();
+        console.log(arr);
+        arr.valueOf(); //it get array itself
+        console.log(arr);
+        let arr2 = arr;
+        console.log(arr2);
+        arr2[1] = 99;
+        console.log(arr); //array also use referencelike object
+        let [a, b, c] = arr;
+        console.log(a + " " + b + " " + c); //destructuring of array
+    </script>
+
+</body>
+
+</html>

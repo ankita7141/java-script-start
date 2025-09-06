@@ -5,11 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <STYle>
+        #my-button {
+            height: 75px;
+            width: 75px;
+            font-size: 25px;
+        }
+    </STYle>
 </head>
 
 <body>
     <h3 id="greeting"></h3>
+    <button id="my-button" onclick="button();">
+        0
+    </button>
     <script>
+        let numOfTimePressed = 0;
+
+        function button() {
+            let button = document.querySelector('#my-button');
+            numOfTimePressed++;
+            button.innerText = numOfTimePressed;
+
+
+
+        }
+
         function greeting(personName = 'Dear') {
             let date = new Date();
             let heading = document.querySelector('#greeting');

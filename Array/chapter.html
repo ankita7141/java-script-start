@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let num = [1, 2, 3, 4, 5, 6, 7];
+        console.log(num);
+        console.log(`length of array is ${num.length}`);
+        console.log(`at index 4 the num stored is ${num[4]}`); //array can hold anytype of values like int char obj etc
+        let array = [1, true, null, 'hello', {
+            likes: '1.5M'
+        }];
+        let obj = {
+            type: 'cotton',
+            name: 'silk',
+        };
+        console.log(array);;
+        console.log(`value at index 4 is ${array[4].likes}`); //accessing obj inside array
+        console.log(typeof array);
+        console.log(Array.isArray(num));
+        console.log(Array.isArray(obj));
+        //Array.isArra() checks if a variable is an array
+    </script>
+
+</body>
+
+</html>
