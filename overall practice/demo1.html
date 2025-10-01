@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function greet() {
+            document.getElementById('demo').innerHTML = 'hello from js function'
+        }
+        document.write("hello from js file using document.write");
+        window.alert("hello from js file using window alert");
+        alert(5 + 7);
+        console.log("hello from js file using console log");
+        console.log(5 + 7);
+    </script>
+</head>
+
+<body>
+    <h1 id="demo">change greeting with java script</h1>
+    <button type=" button" onclick="document.getElementById('demo').innerHTML='hello from js ' ">click me</button>
+    <button onclick="document.getElementById(`off`).src='/overall practice/on.jpg'" id="on">light on</button>
+    <img src="/overall practice/off.jpg" alt="off" id="off">
+    <button onclick="document.getElementById(`off`).src='/overall practice/off.jpg'">light off</button>
+    <h2 id="change">change the font size click on below button</h2>
+    <button onclick="document.getElementById(`change`).style.fontSize='30px'">change</button>
+    <h2 id="hide">to hide this line click below</h2>
+    <button onclick="document.getElementById(`hide`).style.display='none'">hide</button>
+
+    <button onclick="document.getElementById(`hide`).style.display='block'">display</button>
+    <script>
+        document.getElementById(`demo`).innerHTML = "hello from js file";
+    </script>
+    <button onclick="greet()">call function to change</button>
+    <button onclick="window.print()">click here to print page</button>
+
+
+</body>
+
+</html>
